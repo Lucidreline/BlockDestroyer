@@ -39,7 +39,7 @@ public class GameStatus : MonoBehaviour {
 
     public void AddToScore()
     {
-        currentScore += pointsPerBlockDestroyed;
+            currentScore += pointsPerBlockDestroyed;
     }
     public void DestroyGameStatus()
     {

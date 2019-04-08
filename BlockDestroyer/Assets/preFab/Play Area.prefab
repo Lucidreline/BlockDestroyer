@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 4430425095301508}
   - component: {fileID: 212790594305603102}
   m_Layer: 0
-  m_Name: Blue Rocket Background
+  m_Name: Winter Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,7 +140,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1751973386811106}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalPosition: {x: -2.6, y: 0, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4732153978873068}
@@ -336,7 +336,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eb40efec92a3ca447b3227c8ff8e354a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bbfe18dd194c8748be3cf40343c85ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
