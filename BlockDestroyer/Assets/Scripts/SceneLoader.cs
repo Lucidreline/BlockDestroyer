@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
 
+    
+
 	public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -12,7 +14,8 @@ public class SceneLoader : MonoBehaviour {
     }
     public void LoadFirstScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex - currentSceneIndex);
+        FindObjectOfType<GameStatus>().DestroyGameStatus();
+        
+        SceneManager.LoadScene(0);
     }
 }

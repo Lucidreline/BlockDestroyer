@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Block : MonoBehaviour {
     [SerializeField] AudioClip BreakSound;
+    [SerializeField] GameObject blockSparklesVFX;
 
     Level level;
     GameStatus gameStats;
@@ -26,7 +27,14 @@ public class Block : MonoBehaviour {
         gameStats.AddToScore();
         Destroy(gameObject);
         level.BlockDestroyed();
+        triggerSparklesVFX();
         
-        
+
+    }
+
+    private void triggerSparklesVFX()
+    {
+        GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
+        Destroy(sparkles, 1f);
     }
 }
